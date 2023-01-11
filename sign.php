@@ -7,7 +7,7 @@ if (!isset($_SESSION['logged_in'])) {
 }
 
 elseif($_SESSION['logged_in'] == 'True') {
-    header('Location: index');
+    header('Location: index.php');
 }
 
 else{
@@ -51,10 +51,8 @@ require $nav; ?>
                                         <div class="input-field col s6">
                                             <select class="icons" name="country">
                                                 <option value=""  disabled selected>Choose your country</option>
-                                                <option value="India">India</option>
-                                                <option value="Morocco">Morocco</option>
-                                                <option value="Egypt">Egypt</option>
-                                                <option value="Algeria">Algeria</option>
+                                                <option value="Nepal">Nepal</option>
+                                              
                                             </select>
                                             <label>Country</label>
                                         </div>

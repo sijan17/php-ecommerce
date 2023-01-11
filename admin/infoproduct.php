@@ -3,7 +3,7 @@
 session_start();
 
 if ($_SESSION['role'] !== 'admin') {
-    header('Location: ../index');
+    header('Location: ../index.php');
 }
 
 require 'includes/header.php';
@@ -14,8 +14,8 @@ require 'includes/navconnected.php'; //require $nav;?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">Dashboard</a>
-                    <a href="infoproduct" class="breadcrumb">Products</a>
+                    <a href="index.php" class="breadcrumb">Dashboard</a>
+                    <a href="infoproduct.php" class="breadcrumb">Products</a>
                 </div>
             </div>
         </nav>
@@ -30,7 +30,7 @@ require 'includes/navconnected.php'; //require $nav;?>
                     <img src="src/img/add.png" alt="">
                 </div>
                 <div class="card-action">
-                    <a class="blue-text" href="addproduct">Add Product</a>
+                    <a class="blue-text" href="addproduct.php">Add Product</a>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@ require 'includes/navconnected.php'; //require $nav;?>
                     <img src="src/img/stats.png" alt="">
                 </div>
                 <div class="card-action">
-                    <a class="blue-text" href="stats">See Stats</a>
+                    <a class="blue-text" href="stats.php">See Stats</a>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@ require 'includes/navconnected.php'; //require $nav;?>
                     <img src="src/img/edit.png" alt="">
                 </div>
                 <div class="card-action">
-                    <a class="blue-text" href="editproduct">Commands</a>
+                    <a class="blue-text" href="editproduct.php">Commands</a>
                 </div>
             </div>
         </div>

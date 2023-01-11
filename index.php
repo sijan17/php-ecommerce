@@ -55,18 +55,18 @@ require $nav; ?>
     }
 </style>
 
-<div class="container-fluid home" id="top">
+<div class="container-fluid home" id="">
     <div class="container search">
         <nav class="animated slideInUp wow">
             <div class="nav-wrapper">
                 <form method="GET" action="search.php">
                     <div class="input-field">
-                        <input id="search" class="searching" type="search" name='searched' required>
+                        <input id="search" class="" type="search" name='searched' placeholder="Search Products" required>
                         <label for="search"><i class="material-icons">search</i></label>
                     </div>
 
                     <div class="center-align">
-                        <button type="submit" name="search" class="blue waves-light miaw waves-effect btn hide">Search</button>
+                        <button type="submit" name="search" class="blue waves-light miaw waves-effect btn ">Search</button>
                     </div>
                 </form>
             </div>
@@ -112,14 +112,15 @@ require $nav; ?>
                     <div class="card hoverable animated slideInUp wow">
                         <div class="card-image">
                             <a href="product.php?id=<?= $id_best;  ?>"><img src="products/<?= $thumbnail_best; ?>"></a>
-                            <span class="card-title blue-text"><?= $name_best; ?></span>
+                            <span class="card-title blue-text"></span>
                             <a href="product.php?id=<?= $id_best; ?>" class="btn-floating blue halfway-fab waves-effect waves-light right"><i class="material-icons">add</i></a>
                         </div>
                         <div class="card-content">
                             <div class="container">
+                                <div class="row"><?= $name_best; ?></div>
                                 <div class="row">
                                     <div class="col s6">
-                                        <p class="white-text"><i class="left fa fa-dollar"></i> <?= $price_best; ?></p>
+                                        <p class="white-text">Rs <?= $price_best; ?></p>
                                     </div>
                                     <div class="col s6">
                                         <p class="white-text"><i class="left fa fa-shopping-basket"></i> <?= $totalsold; ?></p>
@@ -186,20 +187,14 @@ require $nav; ?>
             <div class="col s12 m6">
                 <h3 class="animated slideInUp wow">About Us</h3>
                 <div class="divider animated slideInUp wow"></div>
-                <p class="animated slideInUp wow">This project aims to implement an e-commerce website which enables
-                    stores to migrate online. We are making use of PHP and MySQL based dynamically generated web pages
-                    to allow purchasing of items. We are going to implement a cart system to allow customers to store
-                    their items. We are also going to implement an authentication system, to differentiate between
-                    regular and logged in customers, by making use of MySQL database. The users are handled using
-                    PHP sessions to allow them to make changes to the cart. These changes are stored as session variables
-                    so that the user can come back and restore his previous session. </p>
+                <p class="animated slideInUp wow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro totam sunt, error neque pariatur, sed repudiandae minima, consequatur iste voluptatum assumenda libero corporis ex similique aut dolorum praesentium repellendus ut. </p>
             </div>
 
         </div>
     </div>
 </div>
 
-<div class="container contact" id="contact">
+<!-- <div class="container contact" id="contact">
     <div class="row">
         <form action="https://postmail.invotes.com/send" method="post" id="email_form" class="col s12 animated slideInUp wow">
             <h3 class="animated slideInUp wow">Contact Us</h3>
@@ -219,7 +214,6 @@ require $nav; ?>
                     <textarea id="icon_prefix2" class="materialize-textarea" type="text" name="text" rows="4"" style=" resize: vertical;min-height: 8rem;" required></textarea>
                     <label for="icon_prefix2">Your message</label>
                 </div>
-                <!-- Go to https://postmail.invotes.com/ to get an access token -->
                 <input type="hidden" name="access_token" value="" />
                 <input type="hidden" name="success_url" value="." />
                 <input type="hidden" name="error_url" value=".?err=1" />
@@ -230,7 +224,7 @@ require $nav; ?>
             </div>
         </form>
     </div>
-</div>
+</div> -->
 
 
 

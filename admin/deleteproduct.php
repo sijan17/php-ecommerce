@@ -14,6 +14,6 @@ header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 
 else {
-  header('Location: ../sign');
+  header('Location: ../sign.php');
 }
 ?>

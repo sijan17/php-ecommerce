@@ -2,7 +2,7 @@
 session_start();
 
 if ($_SESSION['item'] < 1 OR !isset($_SESSION['logged_in'])) {
-    header('Location: sign');
+    header('Location: sign.php');
 }
 
 else {
@@ -19,8 +19,8 @@ require $nav;?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">Home</a>
-                    <a href="cart" class="breadcrumb">Cart</a>
+                    <a href="index.php" class="breadcrumb">Home</a>
+                    <a href="cart.php" class="breadcrumb">Cart</a>
                 </div>
             </div>
         </nav>
@@ -71,7 +71,7 @@ WHERE command.id_product = product.id AND product.id_category = category.id AND 
         </tbody>
     </table>
     <div class="right-align">
-        <a href="checkout"
+        <a href="checkout.php"
            class='btn-large button-rounded waves-effect waves-light'>
             Check out <i class="material-icons right">payment</i></a>
     </div>

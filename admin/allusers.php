@@ -3,7 +3,7 @@
 session_start();
 
 if ($_SESSION['role'] !== 'admin') {
-    header('Location: ../index');
+    header('Location: ../index.php');
 }
 
 require 'includes/header.php';
@@ -14,8 +14,8 @@ require 'includes/navconnected.php'; //require $nav;?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">Dashboard</a>
-                    <a href="users" class="breadcrumb">Users</a>
+                    <a href="index.php" class="breadcrumb">Dashboard</a>
+                    <a href="users.php" class="breadcrumb">Users</a>
                 </div>
             </div>
         </nav>

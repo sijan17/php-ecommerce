@@ -4,7 +4,7 @@ session_start();
 if (!isset($_SESSION['logged_in'])) {
     $nav ='includes/nav.php';
     if (!isset($_GET['search'])) {
-      header('Location: index');
+      header('Location: index.php');
     }
     else {
       $word = $_GET['searched'];
@@ -14,7 +14,7 @@ else {
   $nav ='includes/navconnected.php';
   $idsess = $_SESSION['id'];
   if (!isset($_GET['search'])) {
-    header('Location: index');
+    header('Location: index.php');
   }
   else {
     $word = $_GET['searched'];
@@ -29,7 +29,7 @@ else {
       <nav>
         <div class="nav-wrapper">
           <div class="col s12">
-            <a href="index" class="breadcrumb">Home</a>
+            <a href="index.php" class="breadcrumb">Home</a>
             <a href="search" class="breadcrumb">Search</a>
           </div>
         </div>

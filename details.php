@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['logged_in'])) {
-    header('Location: sign');
+    header('Location: sign.php');
 }
 
 else {
@@ -47,7 +47,7 @@ require 'includes/header.php';
                 <tr>
                     <td><?= $product_details; ?></td>
                     <td><?= $quantity_details; ?></td>
-                    <td>$ <?= $price_details; ?></td>
+                    <td>Nrs. <?= $price_details; ?></td>
                     <td><?= $user_details; ?></td>
                     <td><?= $country_details; ?></td>
                     <td><?= $city_details; ?></td>
@@ -68,7 +68,7 @@ require 'includes/header.php';
         </tbody>
     </table>
     <div class="right-align">
-        <p>Thank you for trusting us © E-Commerce Inc <?= date('Y'); ?></p>
+        <p>Thank you for trusting us © E-Commerce  <?= date('Y'); ?></p>
     </div>
 
     <form method="post">
@@ -81,7 +81,7 @@ require 'includes/header.php';
             $queryupdate = "UPDATE details_command SET statut = 'done' WHERE id_user = '$idsess' AND statut = 'ready'";
             $queryupdate = mysqli_query($connection, $queryupdate);
 
-            echo "<meta http-equiv='refresh' content='0;url=index' />";
+            echo "<meta http-equiv='refresh' content='0;url=index.php' />";
         }
 
         ?>

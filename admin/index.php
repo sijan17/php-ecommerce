@@ -14,8 +14,8 @@ if ($_SESSION['role'] !== 'admin') {
       <nav>
         <div class="nav-wrapper">
           <div class="col s12">
-            <a href="../index" class="breadcrumb">E-Commerce</a>
-            <a href="index" class="breadcrumb">Dashboard</a>
+            <a href="../index.php" class="breadcrumb">E-Commerce</a>
+            <a href="index.php" class="breadcrumb">Dashboard</a>
           </div>
         </div>
       </nav>
@@ -34,7 +34,7 @@ if ($_SESSION['role'] !== 'admin') {
                 <p>Products & Commands</p>
               </div>
                <div class="card-action">
-                 <a href="infoproduct" class="blue-text">Learn more</a>
+                 <a href="infoproduct.php" class="blue-text">View more</a>
                </div>
              </div>
            </div>
@@ -50,7 +50,7 @@ if ($_SESSION['role'] !== 'admin') {
           <p>Stock</p>
         </div>
              <div class="card-action">
-               <a href="products" class="blue-text">Learn more</a>
+               <a href="products.php" class="blue-text">View more</a>
              </div>
              </div>
 
@@ -67,7 +67,7 @@ if ($_SESSION['role'] !== 'admin') {
                 <p>Users</p>
               </div>
                <div class="card-action">
-                 <a href="allusers" class="blue-text">Learn more</a>
+                 <a href="allusers.php" class="blue-text">View more</a>
                </div>
              </div>
            </div>

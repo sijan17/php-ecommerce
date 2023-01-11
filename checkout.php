@@ -2,11 +2,11 @@
 session_start();
 
 if (!isset($_SESSION['logged_in']) && !isset($_SESSION['item'])) {
-    header('Location: sign');
+    header('Location: sign.php');
 }
 
 elseif($_SESSION['item'] < 1){
-    header('Location: index');
+    header('Location: index.php');
 }
 else {
     $nav ='includes/navconnected.php';
@@ -27,9 +27,9 @@ require $nav;?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">Home</a>
-                    <a href="cart" class="breadcrumb">Cart</a>
-                    <a href="checkout" class="breadcrumb">Checkout</a>
+                    <a href="index.php" class="breadcrumb">Home</a>
+                    <a href="cart.php" class="breadcrumb">Cart</a>
+                    <a href="checkout.php" class="breadcrumb">Checkout</a>
                 </div>
             </div>
         </nav>
@@ -38,7 +38,7 @@ require $nav;?>
 
 <div class="container checkout">
     <div class="card pay">
-        <form method="post" action="final">
+        <form method="post" action="final.php">
             <div class="row">
 
                 <div class="input-field col s6">
@@ -50,10 +50,8 @@ require $nav;?>
                 <div class="input-field col s6">
                     <select class="icons" name="country" value="<?= $country_sess; ?>">
                         <option value=""  disabled selected>Choose your country</option>
-                        <option value="India">India</option>
-                        <option value="Morocco">Morocco</option>
-                        <option value="Egypt">Egypt</option>
-                        <option value="Algeria">Algeria</option>
+                        <option value="India">Nepal</option>
+                        
                     </select>
                     <label>Country</label>
                 </div>
@@ -84,7 +82,7 @@ require $nav;?>
                 </div>
 
                 <div class="center-align">
-                    <button type="submit" id="confirmed" name="pay" class="btn meh button-rounded waves-effect waves-light ">Pay</button>
+                    <button onclick="" type="submit" id="confirmed" name="pay" class="btn meh button-rounded waves-effect waves-light ">Pay</button>
                 </div>
             </div>
         </form>

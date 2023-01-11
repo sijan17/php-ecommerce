@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['id'])) {
-header('Location: ../sign');
+header('Location: ../sign.php');
 }
 else {
 
@@ -18,9 +18,9 @@ require 'includes/navconnected.php'; }
     <nav>
       <div class="nav-wrapper">
         <div class="col s12">
-          <a href="index" class="breadcrumb">Dashboard</a>
-          <a href="infoproduct" class="breadcrumb">Managa Products</a>
-          <a href="addproduct" class="breadcrumb">Add product</a>
+          <a href="index.php" class="breadcrumb">Dashboard</a>
+          <a href="infoproduct.php" class="breadcrumb">Managa Products</a>
+          <a href="addproduct.php" class="breadcrumb">Add product</a>
         </div>
       </div>
     </nav>

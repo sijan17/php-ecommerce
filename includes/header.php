@@ -18,5 +18,11 @@
       <link rel="stylesheet" href="src/css/style.css">
       <!-- Progress bar -->
       <link rel='stylesheet' href='src/css/nprogress.css'/>
+      <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<style>
+body {
+    font-family: 'Poppins';font-size: 22px;
+}
+</style>
     </head>
   <body>

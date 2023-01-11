@@ -19,7 +19,7 @@ require $nav; ?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">E-Commerce</a>
+                    <a href="index.php" class="breadcrumb">E-Commerce</a>
                     <a href="orders" class="breadcrumb">Orders</a>
                 </div>
             </div>

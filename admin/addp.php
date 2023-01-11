@@ -4,7 +4,7 @@ session_start();
 
 error_reporting(0);
 if(!isset($_GET['id']) && !isset($_GET['category']) && !isset($_GET['icon'])){
-    header('Location: index');
+    header('Location: index.php');
 }
 
 else {
@@ -19,8 +19,8 @@ else {
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">Dashboard</a>
-                    <a href="addproduct" class="breadcrumb"><?= $name_category; ?></a>
+                    <a href="index.php" class="breadcrumb">Dashboard</a>
+                    <a href="addproduct.php" class="breadcrumb"><?= $name_category; ?></a>
                 </div>
             </div>
         </nav>

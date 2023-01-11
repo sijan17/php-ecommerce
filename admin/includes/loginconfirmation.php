@@ -37,7 +37,7 @@ else{
 $_SESSION['id'] = $db_id;
 $_SESSION['user'] = $db_name;
 $_SESSION['logged_in']= 'True';
-header( "Location: index" );
+header( "Location: index.php" );
 }
 
 } ?>

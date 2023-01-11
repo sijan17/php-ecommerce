@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_GET['id'])) {
-    header('Location: index');
+    header('Location: index.php');
 }
 
 if (!isset($_SESSION['logged_in'])) {
@@ -22,7 +22,7 @@ $id_product =$_GET['id'];
       <nav>
         <div class="nav-wrapper">
           <div class="col s12">
-            <a href="index" class="breadcrumb">Home</a>
+            <a href="index.php" class="breadcrumb">Home</a>
             <a href="product.php?id=<? $id_product; ?>" class="breadcrumb">Product</a>
           </div>
         </div>
@@ -85,11 +85,11 @@ $id_product =$_GET['id'];
        <div class="divider"></div>
        <div class="stuff">
         <h3 class="woow">Price</h3>
-        <h5>$ <?= $price_product; ?></h5>
+        <h5>Rs<?= $price_product; ?></h5>
            <p><?= $description; ?></p>
           <div class="input-field col s12">
-            <i class="material-icons prefix">shopping_basket</i>
-            <input id="icon_prefix" type="number" name="quantity" min="1" class="validate" required>
+            <!-- <i class="material-icons prefix">shopping_basket</i> -->
+            <input id="icon_prefix" type="number" name="quantity" min="1" value="1" class="validate" required>
             <label for="icon_prefix">Quantity</label>
           </div>
 
@@ -98,7 +98,7 @@ $id_product =$_GET['id'];
             if (isset($_POST['buy'])) {
               // check error here
                if (!isset($_SESSION['logged_in'])) {
-                 echo "<meta http-equiv='refresh' content='0;url=./sign' />";
+                 echo "<meta http-equiv='refresh' content='0;url=./sign.php' />";
                }
 
                else {

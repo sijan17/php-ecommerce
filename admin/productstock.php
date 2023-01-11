@@ -3,7 +3,7 @@
 session_start();
 
 if ($_SESSION['role'] !== 'admin') {
-  header('Location: ../index');
+  header('Location: ../index.php');
 }
 
 $category = $_GET['id'];
@@ -16,9 +16,9 @@ $category = $_GET['id'];
       <nav>
         <div class="nav-wrapper">
           <div class="col s12">
-            <a href="index" class="breadcrumb">Dashboard</a>
-            <a href="products" class="breadcrumb">Stock</a>
-            <a href="productstock" class="breadcrumb">Products</a>
+            <a href="index.php" class="breadcrumb">Dashboard</a>
+            <a href="products.php" class="breadcrumb">Stock</a>
+            <a href="productstock.php" class="breadcrumb">Products</a>
           </div>
         </div>
       </nav>
@@ -46,7 +46,7 @@ $category = $_GET['id'];
                    <span class="card-title grey-text"><?= $name; ?></span>
                  </div>
                  <div class="card-content">
-                      <h5 class="white-text">$ <?= $price; ?></h5>
+                      <h5 class="white-text">Rs<?= $price; ?></h5>
                       <a class="blue-text" href="deleteproduct.php?id=<?= $id_product;?>">Delete</a>
                  </div>
              </div>

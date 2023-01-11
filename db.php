@@ -1,6 +1,6 @@
 <?php
 
-$connection = mysqli_connect('localhost', 'root', 'MyNewPass', 'ecommerce');
+$connection = mysqli_connect('localhost', 'root', '', 'ecommerce');
 if(!$connection) {
     die("Database connection failed");
 }
